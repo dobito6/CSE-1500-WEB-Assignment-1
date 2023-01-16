@@ -1,0 +1,129 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color:#fbf2d8f3;
+}
+
+h1 {
+    font-family: "Dancing Script";
+    font-size: 2.5em;
+}
+
+input[type="submit"] {
+    color:#100c01ed;
+    background-color:#f3c95ec1;
+}
+
+#header-logo {
+    max-width: 80px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+#header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #fdda81c9;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+#header-menu {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 0;
+}
+
+#header-menu a {
+    text-decoration: none;
+    color:#503d0dd2;
+}
+
+#header-menu a:hover {
+    color: #c89f39d2;
+}
+
+#header-menu li {
+    margin-left: 30px;
+    font-size: 1.15em;
+}
+
+#header-title {
+    text-align: center;
+    font-family: "Dancing Script";
+    color: #2b2004d2;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #d4aa40c1;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-top: 30px;
+
+}
+
+#footer-logo {
+    max-width: 80px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+#follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #100c01ed;
+}
+
+#rights {
+    margin: auto;
+    font-style: italic;
+}
+
+#footer-title {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#follow-text, #follow-icons {
+    margin: auto;
+}
+
+#follow-text {
+    margin-top: 20px;
+    color: #100c01ed;
+}
+
+#follow-us {
+    margin-left: auto;
+    margin-right: 160px;
+}
+
+.fa {
+    margin-right: 8px;
+    color:#503d0dd2;
+}
+
+.fa:hover {
+    color: #96782cd2;
+}
+
+.fa-facebook {
+    margin-left: 10px;
+}

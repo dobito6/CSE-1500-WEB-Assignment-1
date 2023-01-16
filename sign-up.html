@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Assignment 1 from WDT course 2022/2023" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style-header-footer.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style>
+            
+            h1 {
+                text-align: center;
+            }
+
+            label {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .inline {
+                display: inline;
+                margin-left: 10px;
+            }
+
+            #submit {
+                margin: 20px 40px 0 0;
+                height: 3em;
+                min-width: 100px;
+            }
+
+            fieldset {
+                max-width: 600px;
+                border: none;
+                border-bottom: 2px solid;
+            }
+			
+			fieldset > label {
+				display: inline-block;
+				width: 30%;
+			}
+			
+			fieldset > input {
+				display: inline-block;
+				width: 60%;
+			}
+			
+			.register-form {
+				width:540px;
+				margin: 0 auto;
+			}
+			
+			.selection {
+				display:inline-block;
+			}
+			
+			#bio-text {
+				display:inline-block; 
+				width: 307px;
+				height: 50px;
+				resize: none;
+			}
+		
+			.submit-panel {
+				display:flex; 
+				flex-direction:row; 
+				justify-content:flex-end;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <a href="index.html"><img id="header-logo" src="logo.png" alt="logo" /></a>
+            <h1 id="header-title">Share Your Journey</h1>
+            <ul id="header-menu">
+                <li><a href="route.html">Choose Route</a></li>
+                <li><a href="log-in.html">Log in</a></li>
+                <li><a href="sign-up.html">Sign up</a></li>
+            </ul>
+        </div>
+
+        <h1>Welcome to our website</h1>
+
+        <div class="register-form">
+            <fieldset>
+                <h3>Personal details</h3>
+                <label>Name:</label><input type="text" id="name" placeholder="Name" required>
+                <label>Age:</label><input type="number" id="age" placeholder="18" min="18" max="90" required></label>
+                <label>Address:</label><input type="text" id="address" placeholder="Address" required></label>
+                <label>Country:</label><input type="text" id="country" placeholder="Country" required></label>
+                <label>ZIP Code:</label><input type="text" id="zip" placeholder="ZIP Code"></label>
+                <label>Email:</label><input type="email" id="email" placeholder="abc@abc.com" required></label>
+                <label>Sex:</label>
+				<div class="selection">
+                    <label class="inline"><input type="radio" id="male" name="sex-radio" required>Male</label>
+                    <label class="inline"><input type="radio" id="female" name="sex-radio" required>Female</label>
+                    <label class="inline"><input type="radio" id="other" name="sex-radio" required>Other</label>
+                </div>
+                <label>Language:</label><input type="text" id="language" placeholder="Language" required>
+                <label>Bio:</label><textarea placeholder="Your short bio" id="bio-text"></textarea>
+                <label>I am a:</label>
+				<div class="selection">
+                    <label class="inline"><input type="checkbox" id="driver" name="role-check">Driver</label>
+                    <label class="inline"><input type="checkbox" id="passenger" name="role-check">Passenger</label>
+                </div>
+            </fieldset>
+			
+            <fieldset>
+				<h3>Choose your account details</h3>
+                <form method="post">
+					<label>Username <em>(only lowercase letters): </em><input type="text" id="username" placeholder="Username" minlength="6" pattern="^[a-z].{5,}" required>
+					<label>Password <em>(min 6 lowercase letters and digits): </em><input type="password" id="password" placeholder="******" pattern="[a-z0-9]{6,}" required></label>
+				</form>
+			</fieldset>
+			<div class="submit-panel">
+				<input type="submit" id="submit" value="Sign up">
+			</div>
+        </div>
+
+        <div id="footer">
+            <img id="footer-logo" src="logo.png" alt="logo" />
+            <div id="footer-text">
+                <h3 id="footer-title">Share Your Journey</h3>
+                <h5 id="rights">All rights reserved</h5>
+            </div>
+            <div id="follow-us">
+                <h3 id="follow-text">Follow us</h3>
+                <div id="follow-icons">
+                    <a href="https://facebook.com"><p class="fa fa-facebook"></p></a>
+                    <a href="https://instagram.com"><p class="fa fa-instagram"></p></a>
+                    <a href="https://youtube.com"><p class="fa fa-youtube"></p></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

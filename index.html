@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car-Sharing App</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Assignment 1 from WDT course 2022/2023" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style-header-footer.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
+		<style>
+			.picture {
+				border: 4px solid #c8a345d2;
+			}
+			
+			div + .row {
+				margin: 50px 50px;
+			}
+			
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			.column {
+				width:49%;
+				float:left;
+			}
+
+            #about-us {
+                margin-bottom: 60px;
+            }
+
+		</style>
+		
+    <body>
+        <div id="header" class = "row">
+            <a href="index.html"><img id="header-logo" src="logo.png" alt="logo" /></a>
+            <h1 id="header-title">Share Your Journey</h1>
+            <ul id="header-menu">
+                <li><a href="route.html">Choose Route</a></li>
+                <li><a href="log-in.html">Log in</a></li>
+                <li><a href="sign-in.html">Sign up</a></li>
+            </ul>
+        </div>
+		
+		<div id="about-us" class="row"> 
+			<div class="column">
+				<h1>About us</h1> 
+				<p style="text-align:justify"> 
+					Share Your Journey is a car sharing concept. You've probably seen these red cars with white circles on the street at one time or another. 
+					Nowadays there are white electric cars as well. The way it works is simple: just create a Share Your Journey account, download the app 
+					and use this to book and unlock a car. Each car has its own fixed designated location where you pick it up and return it after your trip.
+					Maintenance, cleaning, that designated spot, fuel card and more are all included. It's all taken care of by Share Your Journey. 
+					Choose your transportation wisely and go green when you can. And if anything goes wrong, we're there to answer your call 24/7.
+				</p>
+			</div>
+			<div class="column">
+				<img class="picture" src="car-sharing.jpg" alt="Image of car sharing" style="margin-left:50px;">
+			</div>
+		</div>
+	
+		<div id="services" class = "row"> 
+			<div class="column">
+				<img class="picture" src="road-trip.jpg" alt="Image of car sharing" style="width:50%; margin-left:150px;"> 
+			</div>
+			<div class="column">
+				<h1>What we provide?</h1> 
+				<p> 
+					<ul>
+						<li>Make an account as a driver or a passenger</li>
+						<li>Upload your review from the trip you took</li>
+						<li>Share with others</li>
+						<li>Read other drivers' reviews</li>
+						<li>Plan your next trip</li>
+						<li>Enjoy your time 🚘🚢✈️🧳</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+        <div id="footer">
+            <img id="footer-logo" src="logo.png" alt="logo" />
+            <div id="footer-text">
+                <h3 id="footer-title">Share Your Journey</h3>
+                <h5 id="rights">All rights reserved</h5>
+            </div>
+            <div id="follow-us">
+                <h3 id="follow-text">Follow us</h3>
+                <div id="follow-icons">
+                    <a href="https://facebook.com"><p class="fa fa-facebook"></p></a>
+                    <a href="https://instagram.com"><p class="fa fa-instagram"></p></a>
+                    <a href="https://youtube.com"><p class="fa fa-youtube"></p></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
